@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Become a Tutor - TutorConnect</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/84b7b29be0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="container-fluid">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <img src="images/Logo.png" alt="TutorConnect Logo" class="logo-img">
+        </a>
+        <div class="auth-actions">
+          <a href="#" class="btn btn-primary"><i class="fas fa-bell"></i></a>
+          <a href="#" class="btn btn-primary"><i class="fas fa-user-circle"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="find-a-tutor.html" class="nav-link">Find a Tutor</a></li>
+        <li><a href="become-a-tutor.html" class="nav-link active">Become a Tutor</a></li>
+        <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+        <li><a href="about-us.html" class="nav-link">About Us</a></li>
+        <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <h1 class="hero-title">Become a Tutor</h1>
+        <p class="hero-subtitle">Join our platform and share your knowledge with students around the world. Set your own schedule, rates, and teach subjects you're passionate about.</p>
+        <a href="#registration-form" class="btn btn-secondary btn-lg">Apply Now</a>
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="hero-section">
+        <div class="container">
+          <h2 class="hero-title">Why Become a Tutor With Us?</h2>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <i class="fas fa-dollar-sign feature-icon"></i>
+              <h3>Competitive Earnings</h3>
+              <p>Keep up to 90% of what you earn, with flexible payment options.</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-users feature-icon"></i>
+              <h3>National Reach</h3>
+              <p>Teach students from around the country on your schedule.</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-chart-line feature-icon"></i>
+              <h3>Growth Tools</h3>
+              <p>Access resources to improve your teaching and grow your student base.</p>
+            </div>
+            <div class="feature-card">
+              <i class="fas fa-headset feature-icon"></i>
+              <h3>Dedicated Support</h3>
+              <p>Our team is here to help you succeed with technical and teaching support.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Registration Form -->
+      <section id="registration-form" class="auth-container">
+        <div style="background-color: var(--medium-gray)" class="auth-box">
+          <div class="auth-toggle">
+              <div style="text-align:center; color: var(--secondary)" class="auth-btn active">Tutor Application</div>
+          </div>
+          
+          <form id="tutorRegistrationForm" class="auth-form active">
+            
+            <!-- Personal Information Section -->
+            <div style="border-bottom: 1px solid var(--secondary) ;" class="form-section">
+              <h3>Personal Information</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+              </div>
+              <fieldset class="form-group">
+                <legend>Location</legend>
+                <div class="filter-checkboxes">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gaboroneCheck" name="location" value="Gaborone">
+                    <label class="form-check-label" for="gaboroneCheck">Gaborone</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="francistownCheck" name="location" value="Francistown">
+                    <label class="form-check-label" for="francistownCheck">Francistown</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="mahalapyeCheck" name="location" value="Mahalapye">
+                    <label class="form-check-label" for="mahalapyeCheck">Mahalapye</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="seroweCheck" name="location" value="Serowe">
+                    <label class="form-check-label" for="seroweCheck">Serowe</label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+                
+            <!-- Professional Information Section -->
+<div style="border-bottom: 1px solid var(--secondary)" class="form-section">
+  <h3>Professional Information</h3>
+  <div class="form-row">
+    <div class="form-group">
+      <label>Highest Education Level</label>
+      <div class="filter-checkboxes">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="highschoolCheck" name="education" value="High School Diploma">
+          <label class="form-check-label" for="highschoolCheck">High School Diploma</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="bachelorCheck" name="education" value="Bachelor's Degree">
+          <label class="form-check-label" for="bachelorCheck">Bachelor's Degree</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="masterCheck" name="education" value="Master's Degree">
+          <label class="form-check-label" for="masterCheck">Master's Degree</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="institution">Institution</label>
+      <input type="text" id="institution" name="institution" required>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label>Subjects You Can Teach</label>
+    <div class="filter-checkboxes">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="teachMathCheck" name="subjects" value="Mathematics">
+        <label class="form-check-label" for="teachMathCheck">Mathematics</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="teachScienceCheck" name="subjects" value="Science">
+        <label class="form-check-label" for="teachScienceCheck">Science</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="teachEnglishCheck" name="subjects" value="English">
+        <label class="form-check-label" for="teachEnglishCheck">English</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="teachProgrammingCheck" name="subjects" value="Programming">
+        <label class="form-check-label" for="teachProgrammingCheck">Programming</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Teaching Preferences -->
+<div style="border-bottom: 1px solid var(--secondary);" class="form-section">
+  <h3>Teaching Preferences</h3>
+<<<<<<< HEAD
+ <div class="filter-group">
+            <button class="filter-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceCollapse">
+              <i class="fas fa-dollar-sign"></i> Price <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse" id="priceCollapse">
+              <div class="price-range">
+                <input type="range" class="form-range" min="100" max="1000" step="5" id="priceRange" name="priceRange">
+                <div class="price-labels">
+                  <span>P<span id="minPrice">100</span></span>
+                  <span>P<span id="maxPrice">1000</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+=======
+  <div class="form-group">
+    <label for="priceRange">Price </label>
+    <input type="range" class="form-range price-slider" min="100" max="1000" step="5" id="priceRange" name="priceRange">
+    <div class="price-labels">
+      <span>P100</span>
+      <span>P1000</span>
+    </div>
+    <input type="hidden" id="selectedPrice" name="selectedPrice" value="100">
+  </div>
+>>>>>>> 4eb6fd6 (Changed images)
+  
+  <div class="form-group">
+    <label>Availability</label>
+    <div class="filter-checkboxes">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="availableWeekdays" name="availability" value="Weekdays">
+        <label class="form-check-label" for="availableWeekdays">Weekdays</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="availableWeekends" name="availability" value="Weekends">
+        <label class="form-check-label" for="availableWeekends">Weekends</label>
+      </div>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label>Teaching Style</label>
+    <div class="filter-checkboxes">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="styleStructured" name="teachingStyle" value="Structured Lessons">
+        <label class="form-check-label" for="styleStructured">Structured Lessons</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="styleCasual" name="teachingStyle" value="Casual/Conversational">
+        <label class="form-check-label" for="styleCasual">Casual/Conversational</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="styleVisual" name="teachingStyle" value="Visual/Interactive">
+        <label class="form-check-label" for="styleVisual">Visual/Interactive</label>
+      </div>
+    </div>
+  </div>
+</div>
+                
+            <!-- Verification -->
+            <div class="form-section">
+              <h3>Verification</h3>
+              <div class="form-group">
+                <label for="resume">Upload Resume/CV (PDF, max 5MB)</label>
+                <input type="file" id="resume" name="resume" accept=".pdf" required>
+              </div>
+              <div class="form-group">
+                <label for="certificates">Upload Certifications (Optional)</label>
+                <input type="file" id="certificates" name="certificates" accept=".pdf,.jpg,.png" multiple>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                <label for="agree-terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-secondary btn-block">Submit Application</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo">
+          <img src="images/Logo.png" alt="TutorConnect Logo" class="logo-img">
+        </a>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>For Students</h4>
+            <a href="find-a-tutor.html">Find a Tutor</a>           
+          </div>
+          <div class="link-group">
+            <h4>For Tutors</h4>
+            <a href="become-a-tutor.html">Become a Tutor</a>
+          </div>
+          <div class="link-group">
+            <h4>Company</h4>
+            <a href="about-us.html">About Us</a>
+          </div>
+          <div class="link-group">
+            <h4>Support</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright">&copy; 2025 TutorConnect. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="search-and-filter.js"></script>
+</body>
+</html>

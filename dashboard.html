@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TutorConnect - Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container-fluid">
+      <div class="header-content">
+        <a href="dashboard.html" class="logo">
+          <img src="Logo.png" alt="TutorConnect Logo" class="logo-img">
+        </a>
+        <div class="auth-actions">
+          <a href="#" class="btn btn-primary"><i class="fas fa-bell"></i></a>
+          <a href="#" class="btn btn-primary"><i class="fas fa-user-circle"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="find-a-tutor.html" class="nav-link">Find a Tutor</a></li>
+        <li><a href="become-a-tutor.html" class="nav-link">Become a Tutor</a></li>
+        <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+        <li><a href="about-us.html" class="nav-link">About Us</a></li>
+        <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Welcome Banner -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="hero-title">Welcome To Your Dashboard</h1>
+      <p class="hero-subtitle">Find all the tools you need here</p>
+      <div class="nav-links">
+        <a href="#" class="btn btn-secondary btn-lg">My Schedule</a>      
+        <a href="#" class="btn btn-secondary btn-lg">Updates & News</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Layout -->
+  <main class="main-content">
+    <div class="container py-5">
+      <h2 class="section-title" style="color: var(--medium-gray)">Your Learning Dashboard</h2>
+      
+      <div class="dashboard-grid">
+        <!-- Main Content -->
+        <div class="dashboard-main">
+          <div class="feature-grid">
+            <a href="#" class="feature-card click">
+              <i class="fas fa-clock feature-icon"></i>
+              <h3>Recent Activity</h3>
+              <div class="text-slider-container">
+                <div class="text-slider-wrapper">
+                  <p class="text-slide active">Your last session was completed on June 15</p>
+                  <p class="text-slide">New message from your Math tutor</p>
+                  <p class="text-slide">Assignment due tomorrow</p>
+                </div>
+              </div>
+            </a>
+            
+            <a href="#" class="feature-card click">
+              <i class="fas fa-calendar-alt feature-icon"></i>
+              <h3>Upcoming Sessions</h3>
+              <div class="text-slider-container">
+                <div class="text-slider-wrapper">
+                  <p class="text-slide active">Math tutoring tomorrow at 3:00 PM</p>
+                  <p class="text-slide">Science session on Friday</p>
+                </div>
+              </div>
+            </a>
+            
+            <a href="#" class="feature-card click">
+              <i class="fas fa-envelope feature-icon"></i>
+              <h3>New Messages</h3>
+              <p>2 unread messages from tutors</p>
+            </a>
+          </div>
+          
+          <div class="nav-links">
+            <a href="dashboard-menu.html" class="btn btn-secondary btn-lg">View Full Dashboard</a>
+          </div>
+        </div>
+        
+        <div style="margin: 1rem"></div>
+        
+        <!-- Featured Tutor -->
+        <div class="highlight-section">
+          <div class="container">
+            <h3 class="section-title">Featured Tutor</h3>
+            <div class="slideshow-container">
+              <div class="slideshow-wrapper">
+                <div class="slide card-slide active">         
+                  <div class="testimonial-content">
+                    <p class="highlight-text">"Excellent at breaking down complex concepts"</p>
+                    <p class="author">- Dr. Sarah Johnson</p>
+                    <p class="highlight-meta">Mathematics Professor, 10+ years experience</p>                          
+                  </div>
+                  <a href="#" class="btn btn-secondary btn-block mt-3">View Profile</a>
+                </div>
+                
+                <div class="slide card-slide">         
+                  <div class="testimonial-content">
+                    <p class="highlight-text">"Making Science fun and accessible"</p>
+                    <p class="author">- Mr. David Chen</p>
+                    <p class="highlight-meta">Science Tutor, specializing in Chemistry</p>                          
+                  </div>
+                  <a href="#" class="btn btn-secondary btn-block mt-3">View Profile</a>
+                </div>
+              </div>                            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="dashboard.html" class="footer-logo">
+          <img src="Logo.png" alt="TutorConnect Logo" class="logo-img">
+        </a>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>For Students</h4>
+            <a href="find-a-tutor.html">Find a Tutor</a>          
+          </div>
+          <div class="link-group">
+            <h4>For Tutors</h4>
+            <a href="become-a-tutor.html">Become a Tutor</a>
+          </div>
+          <div class="link-group">
+            <h4>Company</h4>
+            <a href="about-us.html">About Us</a>
+          </div>
+          <div class="link-group">
+            <h4>Support</h4>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright">&copy; 2025 TutorConnect. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="slideshow.js"></script>
+</body>
+</html>

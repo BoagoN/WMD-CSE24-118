@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find a Tutor - TutorConnect</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/84b7b29be0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="container-fluid">
+      <div class="header-content">
+        <a href="dashboard.html" class="logo">
+          <img src="Images/Logo.png" alt="TutorConnect Logo" class="logo-img">
+        </a>
+        <div class="auth-actions">
+          <a href="#" class="btn btn-primary"><i class="fas fa-bell"></i></a>
+          <a href="#" class="btn btn-primary"><i class="fas fa-user-circle"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Navigation -->
+  <nav class="main-nav">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="find-a-tutor.html" class="nav-link active">Find a Tutor</a></li>
+        <li><a href="become-a-tutor.html" class="nav-link">Become a Tutor</a></li>
+        <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+        <li><a href="about-us.html" class="nav-link">About Us</a></li>
+        <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <h1 class="hero-title">Find Your Perfect Tutor</h1>
+        <p class="hero-subtitle">Search from our network of qualified tutors across various subjects</p>
+      </section>
+      
+<!-- Search and Filters Section -->
+<section class="search-section py-5">
+  <div class="search-box">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search by subject, tutor name, or keyword">
+      <button class="btn btn-primary" type="button">
+        <i class="fas fa-search"></i> Search
+      </button>
+    </div>
+  </div>
+
+  <div class="filter-options mt-4">
+    <div class="row g-3">
+      <div class="col-md-12">
+        <div class="filter-accordion">
+          <!-- Subjects Filter -->
+          <div class="filter-group">
+            <button class="filter-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#subjectsCollapse">
+              <i class="fas fa-book-open"></i> Subjects <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse show" id="subjectsCollapse">
+              <div class="filter-checkboxes">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="mathCheck" name="subjects" value="Mathematics">
+                  <label class="form-check-label" for="mathCheck">Mathematics</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="scienceCheck" name="subjects" value="Science">
+                  <label class="form-check-label" for="scienceCheck">Science</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="englishCheck" name="subjects" value="English">
+                  <label class="form-check-label" for="englishCheck">English</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="programmingCheck" name="subjects" value="Programming">
+                  <label class="form-check-label" for="programmingCheck">Programming</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Level Filter -->
+          <div class="filter-group">
+            <button class="filter-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#levelCollapse">
+              <i class="fas fa-graduation-cap"></i> Level <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse" id="levelCollapse">
+              <div class="filter-checkboxes">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="juniorCheck" name="level" value="Junior School">
+                  <label class="form-check-label" for="juniorCheck">Junior School</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="highschoolCheck" name="level" value="High School">
+                  <label class="form-check-label" for="highschoolCheck">High School</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="universityCheck" name="level" value="University">
+                  <label class="form-check-label" for="universityCheck">University</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Price Filter -->
+          <div class="filter-group">
+            <button class="filter-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceCollapse">
+              <i class="fas fa-dollar-sign"></i> Price <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse" id="priceCollapse">
+              <div class="price-range">
+                <input type="range" class="form-range" min="100" max="1000" step="5" id="priceRange" name="priceRange">
+                <div class="price-labels">
+                  <span>P<span id="minPrice">100</span></span>
+                  <span>P<span id="maxPrice">1000</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Availability Filter -->
+          <div class="filter-group">
+            <button class="filter-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#availabilityCollapse">
+              <i class="fas fa-calendar-alt"></i> Availability <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse" id="availabilityCollapse">
+              <div class="filter-checkboxes">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="weekdaysCheck" name="availability" value="Weekdays">
+                  <label class="form-check-label" for="weekdaysCheck">Weekdays</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="weekendsCheck" name="availability" value="Weekends">
+                  <label class="form-check-label" for="weekendsCheck">Weekends</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Location Filter -->
+          <div class="filter-group">
+            <button class="filter-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#locationCollapse">
+              <i class="fas fa-map-marker-alt"></i> Location <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse" id="locationCollapse">
+              <div class="filter-checkboxes">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gaboroneCheck" name="location" value="Gaborone">
+                  <label class="form-check-label" for="gaboroneCheck">Gaborone</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="francistownCheck" name="location" value="Francistown">
+                  <label class="form-check-label" for="francistownCheck">Francistown</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="mahalapyeCheck" name="location" value="Mahalapye">
+                  <label class="form-check-label" for="mahalapyeCheck">Mahalapye</label>
+                </div>
+                  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="seroweCheck" name="location" value="Serowe">
+                  <label class="form-check-label" for="seroweCheck">Serowe</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teaching Style Filter -->
+          <div class="filter-group">
+            <button class="filter-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#styleCollapse">
+              <i class="fas fa-chalkboard-teacher"></i> Teaching Style <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse" id="styleCollapse">
+              <div class="filter-checkboxes">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="structuredCheck" name="teachingStyle" value="Structured">
+                  <label class="form-check-label" for="structuredCheck">Structured Lessons</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="casualCheck" name="teachingStyle" value="Casual">
+                  <label class="form-check-label" for="casualCheck">Casual/Conversational</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="visualCheck" name="teachingStyle" value="Visual">
+                  <label class="form-check-label" for="visualCheck">Visual/Interactive</label>
+                </div>
+              </div>
+            </div>
+          </div>
+                              
+          <!-- Reset/Apply Buttons -->
+          <div class="filter-buttons mt-3">
+            <button class="btn btn-secondary">Reset Filters</button>
+            <button class="btn btn-secondary">Apply Filters</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      
+      <!-- Tutor Results Section -->
+      <section class="tutor-results py-4">
+        <h2 style="color: var(--medium-gray)" class="section-title">Available Tutors</h2>
+        
+        <div class="feature-grid">
+          <!-- Tutor Profile 1 -->
+          <div class="tutor-card feature-card">
+            <div class="tutor-header">
+              <img src="images/profile.png" alt="Dr. Sarah Johnson" class="tutor-img">
+              <div class="tutor-basic-info">
+                <h3>Dr. Sarah Johnson</h3>
+                <div class="tutor-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="review-count">(128 reviews)</span>
+                </div>
+                <div class="tutor-subject">Mathematics Professor</div>
+              </div>
+            </div>
+            <div class="tutor-details">
+              <p class="tutor-bio">10+ years experience teaching algebra, calculus, and geometry at university level...</p>
+              <div class="tutor-stats">
+                <div><i class="fas fa-clock"></i> 2000+ hours tutored</div>
+                <div><i class="fas fa-user-graduate"></i> 300+ students</div>
+                <div><i class="fas fa-check-circle"></i> Verified credentials</div>
+              </div>
+              <div class="tutor-pricing">
+                <span class="price">P400</span>
+                <span class="session-type">• Online or In-person</span>
+              </div>
+            </div>
+            <div class="tutor-actions">
+              <button class="btn btn-secondary"><i class="fas fa-calendar-check"></i> Book Session</button>
+              <button class="btn btn-secondary btn-sm"><i class="fas fa-envelope"></i> Message</button>
+            </div>
+          </div>
+
+          <!-- Tutor Profile 2 -->
+          <div class="tutor-card feature-card">
+            <div class="tutor-header">
+              <img src="images/profile.png" alt="Mr. David Chen" class="tutor-img">
+              <div class="tutor-basic-info">
+                <h3>Mr. David Chen</h3>
+                <div class="tutor-rating">
+                  <span class="stars">★★★★☆</span>
+                  <span class="review-count">(87 reviews)</span>
+                </div>
+                <div class="tutor-subject">Chemistry Tutor</div>
+              </div>
+            </div>
+            <div class="tutor-details">
+              <p class="tutor-bio">High school chemistry teacher with 8 years experience, specializing in AP Chemistry...</p>
+              <div class="tutor-stats">
+                <div><i class="fas fa-clock"></i> 1500+ hours tutored</div>
+                <div><i class="fas fa-user-graduate"></i> 200+ students</div>
+                <div><i class="fas fa-check-circle"></i> Verified credentials</div>
+              </div>
+              <div class="tutor-pricing">
+                <span class="price">P300</span>
+                <span class="session-type">• Online only</span>
+              </div>
+            </div>
+            <div class="tutor-actions">
+              <button class="btn btn-secondary btn-sm"><i class="fas fa-calendar-check"></i> Book Session</button>
+              <button class="btn btn-secondary btn-sm"><i class="fas fa-envelope"></i> Message</button>
+            </div>
+          </div>
+
+          <!-- Tutor Profile 3 -->
+          <div class="tutor-card feature-card">
+            <div class="tutor-header">
+              <img src="images/profile.png" alt="Ms. Emily Wilson" class="tutor-img">
+              <div class="tutor-basic-info">
+                <h3>Ms. Emily Wilson</h3>
+                <div class="tutor-rating">
+                  <span class="stars">★★★★★</span>
+                  <span class="review-count">(64 reviews)</span>
+                </div>
+                <div class="tutor-subject">English Literature</div>
+              </div>
+            </div>
+            <div class="tutor-details">
+              <p class="tutor-bio">Published author and English professor offering writing coaching and literature analysis...</p>
+              <div class="tutor-stats">
+                <div><i class="fas fa-clock"></i> 800+ hours tutored</div>
+                <div><i class="fas fa-user-graduate"></i> 120+ students</div>
+                <div><i class="fas fa-check-circle"></i> Verified credentials</div>
+              </div>
+              <div class="tutor-pricing">
+                <span class="price">P150</span>
+                <span class="session-type">• In-person only</span>
+              </div>
+            </div>
+            <div class="tutor-actions">
+              <button class="btn btn-secondary"><i class="fas fa-calendar-check"></i> Book Session</button>
+              <button class="btn btn-secondary"><i class="fas fa-envelope"></i> Message</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav class="mt-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="find-a-tutor.html" class="footer-logo">
+          <img src="Images/Logo.png" alt="TutorConnect Logo" class="logo-img">
+        </a>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>For Students</h4>
+            <a href="find-a-tutor.html">Find a Tutor</a>           
+          </div>
+          <div class="link-group">
+            <h4>For Tutors</h4>
+            <a href="become-a-tutor.html">Become a Tutor</a>
+          </div>
+          <div class="link-group">
+            <h4>Company</h4>
+            <a href="about-us.html">About Us</a>
+          </div>
+          <div class="link-group">
+            <h4>Support</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright">&copy; 2025 TutorConnect. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+  <script src="search-and-filter.js"></script>
+</body>
+</html>
