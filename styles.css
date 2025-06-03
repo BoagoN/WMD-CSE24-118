@@ -205,6 +205,8 @@ img {
   margin-right: auto;
 }
 
+
+
 /*====== Slide Styles =====*/
 .slideshow-container {
   position: relative;
@@ -1320,6 +1322,43 @@ img {
   color: var(--secondary);
 }
 
+/* Success Page Styles */
+.success-message {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-xl) 0;
+}
+
+.success-icon {
+  font-size: 5rem;
+  color: var(--primary);
+  margin-bottom: var(--space-lg);
+  animation: bounce 1s ease;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+
+/* Tutor Dashboard Button */
+.dashboard-button {
+  margin-top: var(--space-xl);
+  padding: var(--space-md) var(--space-xl);
+  font-size: 1.2rem;
+}
+
+/* Quick Start Cards */
+.feature-card {
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .feedback-form {
@@ -1412,7 +1451,44 @@ img {
     padding-bottom: var(--space-sm);
   }
 }
-```
+
+/* Dashboard Styles */
+.dashboard-nav {
+  background-color: var(--primary);
+  padding: var(--space-sm) 0;
+}
+
+.dashboard-nav .nav-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+}
+
+.dashboard-nav .nav-link {
+  color: var(--light);
+  padding: var(--space-sm) var(--space-md);
+}
+
+.dashboard-nav .nav-link.active {
+  background-color: var(--primary-dark);
+  border-radius: var(--radius-md);
+}
+
+.dashboard-nav .nav-link i {
+  margin-right: var(--space-xs);
+}
+
+.dashboard-title {
+  color: var(--primary);
+  margin: var(--space-xl) 0;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
 }
 
 

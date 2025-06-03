@@ -86,105 +86,121 @@
           <form id="tutorRegistrationForm" class="auth-form active">
             
             <!-- Personal Information Section -->
-            <div style="border-bottom: 1px solid var(--secondary) ;" class="form-section">
+            <div class="form-section">
               <h3>Personal Information</h3>
               <div class="form-row">
                 <div class="form-group">
                   <label for="firstName">First Name</label>
-                  <input type="text" id="firstName" name="firstName" required>
+                  <input type="text" id="firstName" name="firstName">
                 </div>
                 <div class="form-group">
                   <label for="lastName">Last Name</label>
-                  <input type="text" id="lastName" name="lastName" required>
+                  <input type="text" id="lastName" name="lastName">
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
                   <label for="email">Email Address</label>
-                  <input type="email" id="email" name="email" required>
+                  <input type="email" id="email" name="email">
                 </div>
                 <div class="form-group">
                   <label for="phone">Phone Number</label>
                   <input type="tel" id="phone" name="phone">
                 </div>
               </div>
-              <fieldset class="form-group">
-                <legend>Location</legend>
-                <div class="filter-checkboxes">
+             <div class="filter-group">
+            <button class="filter-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#locationCollapse">
+              <i class="fas fa-map-marker-alt"></i> Location <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse" id="locationCollapse">
+              <div class="filter-checkboxes">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gaboroneCheck" name="location" value="Gaborone">
+                  <label class="form-check-label" for="gaboroneCheck">Gaborone</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="francistownCheck" name="location" value="Francistown">
+                  <label class="form-check-label" for="francistownCheck">Francistown</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="mahalapyeCheck" name="location" value="Mahalapye">
+                  <label class="form-check-label" for="mahalapyeCheck">Mahalapye</label>
+                </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gaboroneCheck" name="location" value="Gaborone">
-                    <label class="form-check-label" for="gaboroneCheck">Gaborone</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="francistownCheck" name="location" value="Francistown">
-                    <label class="form-check-label" for="francistownCheck">Francistown</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="mahalapyeCheck" name="location" value="Mahalapye">
-                    <label class="form-check-label" for="mahalapyeCheck">Mahalapye</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="seroweCheck" name="location" value="Serowe">
-                    <label class="form-check-label" for="seroweCheck">Serowe</label>
-                  </div>
+                  <input class="form-check-input" type="checkbox" id="seroweCheck" name="location" value="Serowe">
+                  <label class="form-check-label" for="seroweCheck">Serowe</label>
                 </div>
               </div>
-            </fieldset>
+            </div>
+          </div>
                 
             <!-- Professional Information Section -->
-<div style="border-bottom: 1px solid var(--secondary)" class="form-section">
+
   <h3>Professional Information</h3>
   <div class="form-row">
-    <div class="form-group">
-      <label>Highest Education Level</label>
-      <div class="filter-checkboxes">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="highschoolCheck" name="education" value="High School Diploma">
-          <label class="form-check-label" for="highschoolCheck">High School Diploma</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="bachelorCheck" name="education" value="Bachelor's Degree">
-          <label class="form-check-label" for="bachelorCheck">Bachelor's Degree</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="masterCheck" name="education" value="Master's Degree">
-          <label class="form-check-label" for="masterCheck">Master's Degree</label>
-        </div>
+    
+    <div class="filter-group">
+      <button class="filter-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#qualificationsCollapse">
+        <i class="fas fa-scroll"></i>Qualifications<i class="fas fa-chevron-down"></i>
+      </button>
+      <div class="collapse" id="qualificationsCollapse">
+        <div class="filter-checkboxes">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="highschoolCheck" name="qualifications" value="Highschool Certificate">
+                  <label class="form-check-label" for="highschoolCheck">Highschool Certificate</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="diplomaCheck" name="qualifications" value="Diploma">
+                  <label class="form-check-label" for="diplomaCheck">Diploma</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="bachelor'sdegreeCheck" name="qualifications" value="Bachelor's Degree">
+                  <label class="form-check-label" for="bachelor'sdegreeCheck">Bachelor's Degree</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="master'sdegreeCheck" name="qualifications" value="Master's Degree">
+                  <label class="form-check-label" for="master'sdegreeCheck">Master's Degree</label>
+                </div>
+              </div>
+            </div>
       </div>
-    </div>
+      
     <div class="form-group">
       <label for="institution">Institution</label>
-      <input type="text" id="institution" name="institution" required>
+      <input type="text" id="institution" name="institution">
     </div>
   </div>
   
-  <div class="form-group">
-    <label>Subjects You Can Teach</label>
-    <div class="filter-checkboxes">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="teachMathCheck" name="subjects" value="Mathematics">
-        <label class="form-check-label" for="teachMathCheck">Mathematics</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="teachScienceCheck" name="subjects" value="Science">
-        <label class="form-check-label" for="teachScienceCheck">Science</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="teachEnglishCheck" name="subjects" value="English">
-        <label class="form-check-label" for="teachEnglishCheck">English</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="teachProgrammingCheck" name="subjects" value="Programming">
-        <label class="form-check-label" for="teachProgrammingCheck">Programming</label>
-      </div>
-    </div>
-  </div>
-</div>
+  <div class="filter-group">
+            <button class="filter-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#subjectsCollapse">
+              <i class="fas fa-book-open"></i> Subjects <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse" id="subjectsCollapse">
+              <div class="filter-checkboxes">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="mathCheck" name="subjects" value="Mathematics">
+                  <label class="form-check-label" for="mathCheck">Mathematics</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="scienceCheck" name="subjects" value="Science">
+                  <label class="form-check-label" for="scienceCheck">Science</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="englishCheck" name="subjects" value="English">
+                  <label class="form-check-label" for="englishCheck">English</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="programmingCheck" name="subjects" value="Programming">
+                  <label class="form-check-label" for="programmingCheck">Programming</label>
+                </div>
+              </div>
+            </div>
+          </div>
 
 <!-- Teaching Preferences -->
-<div style="border-bottom: 1px solid var(--secondary);" class="form-section">
+
   <h3>Teaching Preferences</h3>
-<<<<<<< HEAD
+
  <div class="filter-group">
             <button class="filter-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceCollapse">
               <i class="fas fa-dollar-sign"></i> Price <i class="fas fa-chevron-down"></i>
@@ -199,50 +215,69 @@
               </div>
             </div>
           </div>
-=======
-  <div class="form-group">
-    <label for="priceRange">Price </label>
-    <input type="range" class="form-range price-slider" min="100" max="1000" step="5" id="priceRange" name="priceRange">
-    <div class="price-labels">
-      <span>P100</span>
-      <span>P1000</span>
-    </div>
-    <input type="hidden" id="selectedPrice" name="selectedPrice" value="100">
-  </div>
->>>>>>> 4eb6fd6 (Changed images)
+
+  <div class="filter-group">
+            <button class="filter-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#levelCollapse">
+              <i class="fas fa-graduation-cap"></i> Level <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse" id="levelCollapse">
+              <div class="filter-checkboxes">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="juniorCheck" name="level" value="Junior School">
+                  <label class="form-check-label" for="juniorCheck">Junior School</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="highschoolCheck" name="level" value="High School">
+                  <label class="form-check-label" for="highschoolCheck">High School</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="universityCheck" name="level" value="University">
+                  <label class="form-check-label" for="universityCheck">University</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  <div class="filter-group">
+            <button class="filter-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#availabilityCollapse">
+              <i class="fas fa-calendar-alt"></i> Availability <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse" id="availabilityCollapse">
+              <div class="filter-checkboxes">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="weekdaysCheck" name="availability" value="Weekdays">
+                  <label class="form-check-label" for="weekdaysCheck">Weekdays</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="weekendsCheck" name="availability" value="Weekends">
+                  <label class="form-check-label" for="weekendsCheck">Weekends</label>
+                </div>
+              </div>
+            </div>
+          </div>
   
-  <div class="form-group">
-    <label>Availability</label>
-    <div class="filter-checkboxes">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="availableWeekdays" name="availability" value="Weekdays">
-        <label class="form-check-label" for="availableWeekdays">Weekdays</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="availableWeekends" name="availability" value="Weekends">
-        <label class="form-check-label" for="availableWeekends">Weekends</label>
-      </div>
-    </div>
-  </div>
   
-  <div class="form-group">
-    <label>Teaching Style</label>
-    <div class="filter-checkboxes">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="styleStructured" name="teachingStyle" value="Structured Lessons">
-        <label class="form-check-label" for="styleStructured">Structured Lessons</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="styleCasual" name="teachingStyle" value="Casual/Conversational">
-        <label class="form-check-label" for="styleCasual">Casual/Conversational</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="styleVisual" name="teachingStyle" value="Visual/Interactive">
-        <label class="form-check-label" for="styleVisual">Visual/Interactive</label>
-      </div>
-    </div>
-  </div>
-</div>
+ <div class="filter-group">
+            <button class="filter-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#styleCollapse">
+              <i class="fas fa-chalkboard-teacher"></i> Teaching Style <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="collapse" id="styleCollapse">
+              <div class="filter-checkboxes">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="structuredCheck" name="teachingStyle" value="Structured">
+                  <label class="form-check-label" for="structuredCheck">Structured Lessons</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="casualCheck" name="teachingStyle" value="Casual">
+                  <label class="form-check-label" for="casualCheck">Casual/Conversational</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="visualCheck" name="teachingStyle" value="Visual">
+                  <label class="form-check-label" for="visualCheck">Visual/Interactive</label>
+                </div>
+              </div>
+            </div>
+          </div>
                 
             <!-- Verification -->
             <div class="form-section">
@@ -275,7 +310,7 @@
     <div class="container">
       <div class="footer-content">
         <a href="index.html" class="footer-logo">
-          <img src="images/Logo.png" alt="TutorConnect Logo" class="logo-img">
+          <img src="images/logo.png" alt="TutorConnect Logo" class="logo-img">
         </a>
         <div class="footer-links">
           <div class="link-group">
