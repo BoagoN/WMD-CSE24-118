@@ -56,5 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     confirmation.classList.remove("d-none");
     form.reset();
+
+    setTimeout(() => {
+      window.location.href = "dashboard.html";
+    }, 2500);
   });
 });
