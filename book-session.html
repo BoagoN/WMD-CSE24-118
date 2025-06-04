@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Session - TutorConnect</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/84b7b29be0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+<header class="site-header">
+  <div class="container-fluid">
+    <div class="header-content">
+      <a href="dashboard.html" class="logo">
+        <img src="images/logo.png" alt="TutorConnect Logo" class="logo-img" />
+      </a>
+      <div class="auth-actions">
+        <a href="#" class="btn btn-primary"><i class="fas fa-bell"></i></a>
+        <a href="#" class="btn btn-primary"><i class="fas fa-user-circle"></i></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Tutor Preview Card -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="tutor-card feature-card d-flex align-items-center">
+      <img src="images/profile.png" alt="Dr. Sarah Johnson" class="tutor-img" />
+      <div class="tutor-basic-info ms-4">
+        <h3 class="mb-1">Dr. Sarah Johnson</h3>
+        <div class="tutor-rating mb-1">
+          <span class="stars">★★★★★</span>
+          <span class="review-count">(128 reviews)</span>
+        </div>
+        <div class="tutor-subject">Mathematics • Online or In-person</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking Form Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4" style="color: var(--medium-gray);">Schedule a Session</h2>
+
+    <form class="booking-form bg-white p-4 rounded shadow" style="max-width: 600px; margin: 0 auto;">
+      <!-- Date -->
+      <div class="form-group mb-3">
+        <label for="session-date">Choose a Date</label>
+        <input type="date" class="form-control" id="session-date" required>
+      </div>
+
+      <!-- Time -->
+      <div class="form-group mb-3">
+        <label for="session-time">Choose a Time</label>
+        <input type="time" class="form-control" id="session-time" required>
+      </div>
+
+      <!-- Session Type -->
+      <div class="form-group mb-3">
+        <label for="session-type">Session Type</label>
+        <select class="form-control" id="session-type" required>
+          <option value="">Select one...</option>
+          <option value="Online">Online</option>
+          <option value="In-Person">In-Person</option>
+        </select>
+      </div>
+
+      <!-- Optional Message -->
+      <div class="form-group mb-4">
+        <label for="student-note">Additional Notes (optional)</label>
+        <textarea class="form-control" id="student-note" rows="4" placeholder="Any topics you'd like to focus on..."></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button type="submit" class="btn btn-secondary btn-lg">
+          <i class="fas fa-calendar-check me-2"></i>Confirm Booking
+        </button>
+      </div>
+    </form>
+  </div>
+  <!-- Booking Confirmation Message -->
+<div id="confirmation-message" class="alert alert-success mt-4 text-center d-none">
+  <i class="fas fa-check-circle me-2"></i>
+  Your session has been successfully booked! We’ll notify the tutor.
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <a href="dashboard.html" class="footer-logo">
+        <img src="images/logo.png" alt="TutorConnect Logo" class="logo-img">
+      </a>
+      <div class="footer-links">
+        <div class="link-group">
+          <h4>For Students</h4>
+          <a href="find-a-tutor.html">Find a Tutor</a>
+        </div>
+        <div class="link-group">
+          <h4>For Tutors</h4>
+          <a href="become-a-tutor.html">Become a Tutor</a>
+        </div>
+        <div class="link-group">
+          <h4>Company</h4>
+          <a href="about-us.html">About Us</a>
+        </div>
+        <div class="link-group">
+          <h4>Support</h4>
+          <a href="#">FAQ</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="copyright">&copy; 2025 TutorConnect. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="book-session.js"></script>
+</body>
+</html>
+
