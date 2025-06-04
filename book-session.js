@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const form = document.querySelector(".booking-form");
+  if (!form) return;
   const confirmation = document.getElementById("confirmation-message");
 
   form.addEventListener("submit", function (e) {
